@@ -33,5 +33,56 @@ ru:
     name: 'Туса'
     company: 'Хороший программист'
 
+  devise:
+    shared:
+      links:
+        back: 'Назад'
+        forgot_your_password: 'Забыли пароль?'
+        sign_in: 'Войти'
+        sign_up: 'Регистрация'
+
+    passwords:
+      new:
+        forgot_your_password: 'Забыли пароль?'
+        send_me_reset_password_instructions: 'Выслать новый пароль'
+      edit:
+        change_my_password: 'Изменить мой пароль'
+        change_your_password: 'Изменить пароль'
+        confirm_new_password: 'Повторите новый пароль'
+        new_password: 'Новый пароль'
+
+    registrations:
+      edit:
+        edit_user: 'Изменить пароль'
+        cancel_my_account: 'Удалить учетную запись'
+        are_you_sure: 'Вы уверены?'
+        leave_blank_if_you_don_t_want_to_change_it: 'оставьте поле пустым, если не хотите его менять'
+        we need your current password to confirm your changes: 'необходимо для подтверждения изменений'
+        update: 'Обновить'
+        characters_minimum: 'символов минимум'
+        back: 'Вернуться'
+      new:
+        sign_up: 'Регистрация'
+
+    sessions:
+      new:
+        log_out: 'Выйти'
+        sign_in: 'Войти'
+      signed_in: 'Вход в систему выполнен'
+      signed_out: 'Выход из системы выполнен'
+
+  users:
+    edit:
+      edit_profile: 'Редактировать профиль'
+    show:
+      no_events_yet: 'Пользователь пока не организовал ни одного
+          события'
+    _form:
+      save: 'Cохранить'
+      back: 'Вернуться'
+
+  events:
+    edit:
+      edit_event: 'Редактировать данные о событии'
 
 

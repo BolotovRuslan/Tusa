@@ -1,9 +1,9 @@
 <div class="text-center">
-  <h1><%= @user.name %></h1>
+  <h1><strong><%= @user.name %></strong></h1>
   <%= image_tag user_avatar(@user) %>
 
   <% if @user == current_user %>
-    <p class="buffer-top"><%= link_to 'Редактировать профиль', edit_user_path(@user), class: 'btn btn-default' %></p>
+    <p class="buffer-top"><%= link_to t('users.edit.edit_profile'), edit_user_path(@user), class: 'btn btn-info' %></p>
   <% end %>
 </div>
 
@@ -15,7 +15,7 @@
         <%= render partial: 'events/event', collection: @user.events %>
       </div>
     <% else %>
-      <p class="buffer-top">Пользователь пока не организовал ни одного события</p>
+      <p class="buffer-top"><%= t('.no_events_yet') %></p>
     <% end %>
   </div>
 </div>

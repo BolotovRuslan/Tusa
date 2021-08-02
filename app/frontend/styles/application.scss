@@ -1,5 +1,16 @@
 @import '~bootstrap/scss/bootstrap.scss' ;
 
+.navbar-light .navbar-brand{
+  color: #f60000;
+  font-size: x-large;
+  font-weight: bold;
+};
+
+.navbar-brand-image{
+  width: 40px;
+  height: 40px;
+}
+
 .buffer-top {
   margin-top: 20px;
 }

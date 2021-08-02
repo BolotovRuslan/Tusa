@@ -1,11 +1,11 @@
-<h1>Редактирование профиля</h1>
+<h1><%= t('users.edit.edit_profile')%></h1>
 
 <div class="row">
   <div class="col-md-6 buffer-top">
     <%= render 'form' %>
 
     <p class="buffer-top">
-      <%= link_to 'Сменить пароль', edit_user_registration_path %>
+      <%= link_to t('devise.passwords.edit.change_my_password'), edit_user_registration_path %>
     </p>
   </div>
 </div>
