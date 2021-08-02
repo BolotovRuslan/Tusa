@@ -82,7 +82,17 @@ ru:
       back: 'Вернуться'
 
   events:
+    new:
+      new_event: 'Новое событие'
     edit:
       edit_event: 'Редактировать данные о событии'
+
+  errors:
+    mistake:
+      zero: 'ошибок'
+      one: 'ошибка'
+      few: 'ошибки'
+      many: 'ошибок'
+      other: 'ошибки'
 
 
