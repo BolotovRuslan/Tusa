@@ -44,11 +44,11 @@ class EventsController < ApplicationController
   end
 
   def destroy
+    event_title = @event.title
     @event.destroy
-    respond_to do |format|
-      format.html { redirect_to events_url, notice: I18n.t('controllers.events.destroyed') }
-      format.json { head :no_content }
-    end
+    redirect_to events_url, 
+                notice: "#{I18n.t('controllers.events.event')} '#{event_title}' 
+                #{I18n.t('controllers.events.deleted')}"
   end
 
   private
