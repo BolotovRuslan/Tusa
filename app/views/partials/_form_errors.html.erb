@@ -7,9 +7,9 @@
     </div>
 
     <ul>
-      <% errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
+      <% errors.each do |error| %>
+        <li class="text-break"><%= "#{error.attribute}: #{error.message}" %></li>
+      <%end %>
     </ul>
   </div>
 <% end %>

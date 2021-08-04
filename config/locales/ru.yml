@@ -19,6 +19,13 @@ ru:
         datetime: 'Дата и время'
         description: 'Описание'
 
+    errors:
+      models:
+        subscription:
+          attributes:
+            user_email:
+              email_is_already_taken: 'Используйте другой e-mail или войдите в систему'
+
   # Перевод сообщений, которые отправляет контроллер
   controllers:
     events:
