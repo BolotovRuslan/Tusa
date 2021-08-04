@@ -4,6 +4,7 @@
 .navbar-light .navbar-brand{
   color: #f60000;
   font-size: x-large;
+  //text-decoration: underline dotted #17a2b8;
   font-weight: bold;
 };
 
@@ -39,6 +40,7 @@
   padding: 0;
   overflow: hidden;
   border-radius: 5px;
+  border: 1px solid #17a2b8;
   margin-bottom: 20px;
 }
 
@@ -51,12 +53,14 @@
 
 .thumbnail-inner {
   padding: 20px 4px 4px;
+  //border: 1px solid green;
 }
 
-.edit-delete-event-buttons {
-  width: 50%;
+.datetime{
+  width: 150px;
 }
-.comment {
-  border-bottom: 1px solid lightgray;
 
+.event-info {
+  border: 1px solid lightgray;
+  border-radius: 5px;
 }

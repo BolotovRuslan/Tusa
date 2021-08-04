@@ -1,6 +1,6 @@
 class Subscription < ApplicationRecord
-  belongs_to :event, optional: true
-  belongs_to :user
+  belongs_to :event
+  belongs_to :user, optional: true
 
   validates :event, presence: true
 
@@ -33,6 +33,13 @@ class Subscription < ApplicationRecord
       user.email
     else
       super
+    end
+  end
+
+  private
+  #my code:
+  def foreign_event
+    unless Event.find(event_id) == user_id
     end
   end
 end
