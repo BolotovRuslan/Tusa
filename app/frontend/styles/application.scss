@@ -1,4 +1,5 @@
 @import '~bootstrap/scss/bootstrap.scss' ;
+@import 'events';
 
 .navbar-light .navbar-brand{
   color: #f60000;
@@ -38,6 +39,7 @@
   padding: 0;
   overflow: hidden;
   border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 .thumbnail h3 {
@@ -49,4 +51,12 @@
 
 .thumbnail-inner {
   padding: 20px 4px 4px;
+}
+
+.edit-delete-event-buttons {
+  width: 50%;
+}
+.comment {
+  border-bottom: 1px solid lightgray;
+
 }

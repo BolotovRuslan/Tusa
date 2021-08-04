@@ -33,7 +33,11 @@ module Tusa
     # config.eager_load_paths << Rails.root.join("extras")
 
     # Don't generate system test files.
+    config.time_zone = 'Moscow'
     config.generators.system_tests = nil
     config.i18n.default_locale = :ru
+    config.i18n.locale = :ru
+
+    config.i18n.fallbacks = [:en]
   end
 end
