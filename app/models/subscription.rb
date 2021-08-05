@@ -14,7 +14,7 @@ class Subscription < ApplicationRecord
   validates :user_email, uniqueness: {scope: :event_id}, unless: -> { user.present? }
 
   # Пользователь не может подписаться на своё событие (id)
-  validate :another_user, if: -> { user.present? }
+  validate :event_owner_verification, if: -> { user.present? }
 
   # При подписке нельзя использовать почту зарегистрированных пользователей
   validate :email_is_not_taken, unless: -> { user.present? }
@@ -44,7 +44,7 @@ class Subscription < ApplicationRecord
 
   private
 
-  def another_user
+  def event_owner_verification
     errors.add(:user, :cannot_be_subscribed)  if user == event.user
   end
 
