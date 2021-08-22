@@ -1,24 +1,53 @@
-# README
+## Приложение "Туса" 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Приложение для организации мероприятий, встреч с друзьями.
 
-Things you may want to cover:
+### Основные функции приложения:
 
-* Ruby version
+1. Регистрация пользователя
 
-* System dependencies
+2. Создание "событий"
+    - название
+    - адрес места проведения
+    - дата и время проведения
+    - описание "события"
+    - пин-код доступа
 
-* Configuration
+3. Подписка на "события" других зарегистрированных пользователей
 
-* Database creation
+4. Добавление фотографий зарегистрированными пользователями
 
-* Database initialization
+5. Комментирование "событий" зарегистрироваными и анонимными пользователями
 
-* How to run the test suite
+6. Предусмотрена работа с электронной почтой:
+    - рассылка уведомлений
+    - восстановления пароля
 
-* Services (job queues, cache servers, search engines, etc.)
+7. Возможность редактирования или удаления учетной записи, "событий" и т.д.
 
-* Deployment instructions
+___
+## Для запуска программы:
 
-* ...
+1. Скачайте все файлы из репозитория или склонируйте его
+2. Предустановите ```ruby 3.0.0```, ```bundler```, ```node```, ```yarn```
+3. Установите необходимые зависимости:
+```
+$ bundle install
+$ yarn install
+```
+4. Пропишите вашу почту в config/environments/development 
+```
+user_name: 'Ваша почта'
+password: 'пароль'
+```
+
+5. Прогоните миграции БД:
+```
+$ bundle exec rails db:migrate
+```
+6. Pапустите rails-сервер:
+```
+$ bundle exec rails s
+```
+приложение будет доступно по адресу: http://localhost:3000/
+
